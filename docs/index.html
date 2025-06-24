@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Viewer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Markdown File Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <div class="container">
+        <!-- Sidebar for file list -->
         <aside id="sidebar">
-            <ul id="file-list"></ul>
+            <h2>Files</h2>
+            <ul id="file-list">
+                <!-- File links will be dynamically inserted here by JavaScript -->
+            </ul>
         </aside>
-        <main id="content">
-            <h1>Select a file from the sidebar to view its content.</h1>
+
+        <!-- Main view for content -->
+        <main id="content-view">
+            <!-- Markdown content will be rendered here -->
+            <p>Select a file from the sidebar to view its content.</p>
         </main>
     </div>
-    <script src="js/script.js" defer></script>
+
+    <!-- Include the Marked.js library from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Include your custom JavaScript file -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,108 @@
+/* General Body and Font Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Main container using Flexbox for layout */
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    flex: 0 0 250px; /* Do not grow, do not shrink, base width 250px */
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+#sidebar h2 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+#file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#file-list li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#file-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Add an "active" class for the selected file */
+#file-list li a.active {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Main Content View Styling */
+#content-view {
+    flex: 1; /* Take up the remaining space */
+    padding: 30px 40px;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+/* Styling for rendered Markdown content */
+#content-view h1, #content-view h2, #content-view h3 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#content-view code {
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 85%;
+    border-radius: 3px;
+}
+
+#content-view pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+#content-view pre code {
+    background: none;
+    padding: 0;
+}
+
+#content-view blockquote {
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    padding: 0 1em;
+    margin-left: 0;
+}
+
+#content-view a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+#content-view a:hover {
+    text-decoration: underline;
+}
