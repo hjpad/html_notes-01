@@ -1,6 +1,3 @@
-
-#### `assets/about.md`
-```markdown
 # About This Page
 
 This project was created to demonstrate a common pattern in web development: creating a static site that can display rich content from simple text files.
