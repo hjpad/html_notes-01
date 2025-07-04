@@ -10,5 +10,3 @@ This is a simple single-page application that demonstrates how to:
 **Click on a file in the sidebar to get started!**
 
 > This project uses the `marked.js` library to handle Markdown parsing on the client-side.
-
-a
