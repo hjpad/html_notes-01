@@ -4,7 +4,7 @@ This project was created to demonstrate a common pattern in web development: cre
 
 ---
 
-### Technologies Usedd
+### Technologies Used
 
 *   **HTML5**: For the basic structure.
 *   **CSS3**: For styling and layout (using Flexbox).
